@@ -1,0 +1,10 @@
+ul, li{
+    list-style: none;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.button__submit{
+    padding: 10px 20px;
+    margin-top: 10px;
+}

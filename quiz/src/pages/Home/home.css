@@ -1,0 +1,17 @@
+.content{
+    margin: 30px;
+    line-height: 2;
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.button:hover{
+    color: #fff;
+    background: rgb(226, 156, 25);
+}

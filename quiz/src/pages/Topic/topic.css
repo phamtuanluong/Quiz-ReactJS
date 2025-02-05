@@ -1,0 +1,25 @@
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    width: 40%;
+}
+
+.button__lambai {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.button__lambai:hover{
+    color: #fff;
+    background: black;
+}
