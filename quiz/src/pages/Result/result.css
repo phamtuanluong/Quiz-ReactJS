@@ -1,0 +1,27 @@
+.result__tag--true{
+    background: green;
+    color: #fff;
+    padding: 6px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.result__tag--false{
+    background: red;
+    color: #fff;
+    padding: 6px 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.result__item--selected{
+    color: red;
+}
+
+.result__item--result{
+    color: green;
+}
+
+.form-answer{
+    margin-left: 10px;
+}

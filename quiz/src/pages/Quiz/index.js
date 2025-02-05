@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { getTopic } from "../../services/topicService";
 import { getListQuestion } from "../../services/questionService";
+import {getCookie} from "../../helpers/cookie";
 import "./quiz.css";
+import { createAnswer } from "../../services/quizService";
 
 function Quiz() {
     const params = useParams();
+    const navigate = useNavigate();
     const [dataTopic, setDataTopic] = useState([]);
     const [dataQuestion, setDataQuestion] = useState([]);
 
@@ -26,9 +29,7 @@ function Quiz() {
         fetchApi();
     }, [])
 
-    console.log(dataQuestion);
-
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         let selectedAnswers = [];
@@ -36,10 +37,26 @@ function Quiz() {
             if (e.target.elements[i].checked) {
                 const name = e.target.elements[i].name;
                 const value = e.target.elements[i].value;
-                console.log(name, value);
+
+                selectedAnswers.push({
+                    questionId: parseInt(name),
+                    answer: parseInt(value)
+                })
             }
         }
+
+        let options = {
+            userId: getCookie("id"),
+            topicId: parseInt(params.id),
+            answers: selectedAnswers
+        }
+
+        const response = await createAnswer(options);
+        if(response){
+            navigate(`/result/${response.id}`)
+        }
     }
+
     return (
         <>
             <h2>Bài Quiz chủ đề: {dataTopic && (

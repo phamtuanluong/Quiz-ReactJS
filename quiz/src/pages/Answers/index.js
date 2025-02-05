@@ -24,8 +24,6 @@ function Answers() {
         fetchApi();
     }, [])
 
-    console.log(dataAnswers);
-
     return (
         <>
             <h2>Danh sách chủ đề đã luyện tập</h2>
