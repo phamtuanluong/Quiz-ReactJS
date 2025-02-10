@@ -1,6 +1,8 @@
 const jsonServer = require("json-server");
+const path = require("path");
+
 const server = jsonServer.create();
-const router = jsonServer.router("db.json"); // Đảm bảo `db.json` có trong thư mục
+const router = jsonServer.router(path.join(__dirname, "database.json")); // Đường dẫn tuyệt đối
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
