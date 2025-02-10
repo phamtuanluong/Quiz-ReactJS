@@ -53,8 +53,7 @@ function Quiz() {
 
         const response = await createAnswer(options);
         if(response){
-            navigate(`/result/${response.id}`);
-            window.location.reload();
+            window.location.href = `/result/${response.id}`;
         }
     }
 
