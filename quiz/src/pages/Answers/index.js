@@ -22,7 +22,7 @@ function Answers() {
             setDataAnswers(result.reverse());
         }
         fetchApi();
-    }, [])
+    }, [dataAnswers])
 
     return (
         <>
