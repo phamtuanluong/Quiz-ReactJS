@@ -1,13 +1,14 @@
 {
-  "name": "json-server-db",
+  "name": "project3",
   "version": "1.0.0",
-  "description": "JSON Server API deployed on Vercel",
-  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "vercel-build": "echo 'No build required'"
+    "vercel-build": "node server.js"
   },
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "json-server": "^0.17.0"
+    "json-server": "^1.0.0-beta.3"
   }
 }
