@@ -27,6 +27,7 @@ function Register() {
             if(response){
                 navigate("/login");
                 alert("Bạn đã đăng kí thành công!");
+                window.location.reload();
             }
             else{
                 alert("Đăng ký không thành công!");
