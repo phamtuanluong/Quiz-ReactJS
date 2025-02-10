@@ -25,6 +25,7 @@ function Register() {
             const response = await register(options);
             if(response){
                 navigate("/login");
+                alert("Bạn đã đăng kí thành công!");
             }
             else{
                 alert("Đăng ký không thành công!");
