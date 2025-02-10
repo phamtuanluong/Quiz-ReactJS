@@ -1,15 +1,13 @@
 {
-  "name": "project3",
+  "name": "json-server-db",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "JSON Server API deployed on Vercel",
+  "main": "server.js",
   "scripts": {
-    "start": "json-server --watch database.json --port 3002",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "vercel-build": "echo 'No build required'"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "json-server": "^1.0.0-beta.3"
+    "json-server": "^0.17.0"
   }
 }

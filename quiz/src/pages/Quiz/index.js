@@ -19,7 +19,7 @@ function Quiz() {
         }
         fetchApi();
     }, [])
-
+    
     useEffect(() => {
         const fetchApi = async () => {
             const response = await getListQuestion(params.id);

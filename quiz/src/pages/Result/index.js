@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { getAnswer } from "../../services/answerService";
 import { getListQuestion } from "../../services/questionService";
 import "./result.css";
