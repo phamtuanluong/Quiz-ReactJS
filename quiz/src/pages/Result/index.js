@@ -3,7 +3,6 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { getAnswer } from "../../services/answerService";
 import { getListQuestion } from "../../services/questionService";
 import "./result.css";
-import { getCookie } from "../../helpers/cookie";
 
 function Result() {
     const params = useParams();
