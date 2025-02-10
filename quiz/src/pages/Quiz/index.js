@@ -18,7 +18,7 @@ function Quiz() {
             setDataTopic(response);
         }
         fetchApi();
-    }, [])
+    }, [dataTopic])
     
     useEffect(() => {
         const fetchApi = async () => {
@@ -27,7 +27,7 @@ function Quiz() {
         }
 
         fetchApi();
-    }, [])
+    }, [dataQuestion])
 
     const handleSubmit = async (e) => {
         e.preventDefault();

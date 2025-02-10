@@ -16,6 +16,7 @@ function Register() {
         if(checkExitsEmail.length > 0){
             alert("Email đã tồn tại!");
             navigate("/login");
+            window.location.reload();
         } else{
             const options = {
                 fullName: fullName,
