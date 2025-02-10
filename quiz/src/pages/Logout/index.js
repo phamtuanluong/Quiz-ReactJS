@@ -12,7 +12,8 @@ function Logout(){
 
     useEffect(() => {
         dispatch(checkLogin(false));
-        navigate("/login")
+        navigate("/login");
+        window.location.reload();
     }, []);
 
     return (
