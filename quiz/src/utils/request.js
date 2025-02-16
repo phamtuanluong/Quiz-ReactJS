@@ -1,4 +1,4 @@
-const API_DOMAIN = "https://gvr9qs-3000.csb.app/";
+const API_DOMAIN = "https://tuanluong-dbquiz.onrender.com/";
 
 export const get = async (path) => {
     const response = await fetch(API_DOMAIN + path);
